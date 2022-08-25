@@ -6,7 +6,7 @@
 #Objetivo:Análisis de la expresión diferencial de los genes
 
 ######################################################################################################
-library("limma")
+library(limma)
 library(edgeR) 
 library(AnnotationDbi)
 
@@ -41,6 +41,7 @@ summary(summa.fit)
 
 #Guardar tabla
 save(fit.cont,file="fit_DGE.Rdata")
+save(v,file="voom_result.Rdata")
 
 #Gráficas
 #Venn 
