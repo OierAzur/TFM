@@ -1,13 +1,12 @@
 #Trabajo Fin de Máster - Máster en Métodos Computacionales en ciencias
 #Autor: Oier Azurmendi Senar
 #Tutores_ Silvestre Vicent Cambra y Mikel Hernaez
-#Curso 2022-2023
+#Curso 2021-2022
 
 #Objetivo: Importar la abundancia, la cuantificación estimada y la longitud a nivel de tránscrito para
 #poder realizar los análisis a nivel de gen.
 
 ######################################################################################################
-library("limma")
 library(AnnotationDbi)
 library(EnsDb.Mmusculus.v79)
 setwd("Documents/TFM/Kallisto_complete_Results/")
