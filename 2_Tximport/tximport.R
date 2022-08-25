@@ -1,4 +1,17 @@
+#Trabajo Fin de Máster - Máster en Métodos Computacionales en ciencias
+#Autor: Oier Azurmendi Senar
+#Tutores_ Silvestre Vicent Cambra y Mikel Hernaez
+#Curso 2022-2023
+
+#Objetivo: Importar la abundancia, la cuantificación estimada y la longitud a nivel de tránscrito para
+#poder realizar los análisis a nivel de gen.
+
+######################################################################################################
+library("limma")
+library(AnnotationDbi)
+library(EnsDb.Mmusculus.v79)
 setwd("Documents/TFM/Kallisto_complete_Results/")
+
 base_dir <- "."
 sample_ids <- dir(base_dir,"_")
 sample_ids
@@ -10,9 +23,8 @@ s2c
 s2c$path=kal_dirs
 print(s2c)
 
-
 #tximportData Object
-library(EnsDb.Mmusculus.v79)
+
 txdb <- EnsDb.Mmusculus.v79
 k <- keys(txdb,keytype = "GENEID",columns="TXNAME")
 df <- AnnotationDbi::select(txdb,keys=k,keytype = "GENEID", columns = "TXNAME")
@@ -22,5 +34,9 @@ head(tx2gene)
 #Tximport object a nivel de gen
 txi = tximport(kal_dirs, type = "kallisto", 
                tx2gene=tx2gene,ignoreTxVersion=TRUE)
+
+#Comprobación
 rownames(s2c)
 rownames(txi$counts)
+
+save(txi,file="ObjetoTxi.Rdata")
