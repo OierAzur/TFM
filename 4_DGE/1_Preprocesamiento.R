@@ -7,7 +7,7 @@
 #de los genes
 
 ######################################################################################################
-setwd("Users/oierazur/TFM/DGE/")
+setwd("Documents/TFM/DGE/")
 library(limma)
 library(edgeR) 
 library(AnnotationDbi)
