@@ -6,6 +6,7 @@
 #Objetivo:Análisis de la expresión diferencial de los genes
 
 ######################################################################################################
+setwd("Users/oierazur/TFM/DGE/")
 library(limma)
 library(edgeR) 
 library(AnnotationDbi)
