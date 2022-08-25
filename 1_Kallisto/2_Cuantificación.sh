@@ -9,6 +9,8 @@
 
 mkdir kallisto_complete_results
 
+#Se pasa el índice transcripts.idx a esta carpeta.
+
 cd kallisto_complete results
 
 #Muestras de Colangiocitos Normales
