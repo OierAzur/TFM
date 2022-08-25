@@ -18,7 +18,7 @@ library(dplyr)
 #filtr1<-B>0&(logFC>0.75|logFC< -0.75)
 #filtro2<-B>0&(logFC>1|logFC< -1)
 
-#CCA (Rag-F1):
+#CCA (Rag-F1)
 CCARag_vs_normal<- topTable(fit.cont,coef=1,number=Inf,sort.by = "B")
 CCARag_vs_normal<-dplyr::filter(CCARag_vs_normal, B >0&(logFC>1|logFC< -1))
 CCARag_vs_normal_up <- CCARag_vs_normal[CCARag_vs_normal$logFC>0,]
@@ -28,7 +28,7 @@ CCARag_vs_normal_most_down <- CCARag_vs_normal[ order(CCARag_vs_normal$logFC), ]
 save(CCARag_vs_normal,file="CCARag_vs_normal_filtro1.Rdata")
 write.csv(x=CCARag_vs_normal,"CCARag_vs_normal_filtro1.csv")
 
-#Dieta(Rag-F1):
+#Dieta
 Dieta_vs_normal<- topTable(fit.cont,coef=2,number=Inf,sort.by = "B")
 Dieta_vs_normal<-dplyr::filter(Dieta_vs_normal, B >0&(logFC>1|logFC< -1)) 
 Dieta_vs_normal_up<- Dieta_vs_normal[Dieta_vs_normal$logFC>0,]
