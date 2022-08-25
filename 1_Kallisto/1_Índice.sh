@@ -1,7 +1,7 @@
 #Trabajo Fin de Máster - Máster en Métodos Computacionales en ciencias
 #Autor: Oier Azurmendi Senar
 #Tutores_ Silvestre Vicent Cambra y Mikel Hernaez
-#Curso 2022-2023
+#Curso 2021-2022
 
 #Objetivo: Construir el índice de los transcritos a partir del genoma de ratones GRCm39.
 
