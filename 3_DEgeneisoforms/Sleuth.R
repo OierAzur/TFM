@@ -7,6 +7,7 @@
 #diferencial de los isoformas de los genes. 
 
 ######################################################################################################
+setwd("Documents/TFM/Kallisto_complete_Results/")
 library("gridExtra")
 library("cowplot")
 library(rhdf5)
@@ -15,7 +16,6 @@ library("biomaRt")
 library(tidyverse)
 
 #Cargamos los datos
-setwd("Documents/TFM/Kallisto_complete_Results/")
 base_dir <- "."
 sample_ids <- dir(base_dir,"_")
 sample_ids
