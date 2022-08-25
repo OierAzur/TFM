@@ -7,6 +7,7 @@
 #genes seleccionados en todos los contrastes
 
 ######################################################################################################
+setwd("Users/oierazur/TFM/DGE/")
 library(RColorBrewer)
 library(gplots)
 library(edgeR)
