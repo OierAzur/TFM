@@ -6,7 +6,7 @@
 #Objetivo: Obtención de las tablas de DGE para cada condición.
 
 ######################################################################################################
-setwd("Users/oierazur/TFM/DGE/")
+setwd("Documents/TFM/DGE/")
 load("/Users/oierazur/TFM/DGE/fit_DGE.Rdata")
 library(limma)
 library(tidyverse)
