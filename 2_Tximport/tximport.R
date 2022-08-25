@@ -7,9 +7,10 @@
 #poder realizar los análisis a nivel de gen.
 
 ######################################################################################################
+setwd("Documents/TFM/Kallisto_complete_Results/")
 library(AnnotationDbi)
 library(EnsDb.Mmusculus.v79)
-setwd("Documents/TFM/Kallisto_complete_Results/")
+
 
 base_dir <- "."
 sample_ids <- dir(base_dir,"_")
