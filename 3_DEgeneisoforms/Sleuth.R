@@ -9,7 +9,6 @@
 ######################################################################################################
 setwd("Documents/TFM/Kallisto_complete_Results/")
 library("gridExtra")
-library("cowplot")
 library(rhdf5)
 library("sleuth")
 library("biomaRt")
