@@ -134,5 +134,5 @@ Slc25a48 <- stripchart(v$E["Slc25a48",]~v$targets$group,vertical=T,las=2,cex.axi
 #Para el gen que se quiera:
 #gene_name<- "nombre gen"
 #stripchart(v$E[gene_name,]~v$targets$group,vertical=T,las=2,cex.axis=0.52,pch=16,col=1:5,method="jitter",
-           ylab="Normalised log2 expression",main=gene_name)           
+           #ylab="Normalised log2 expression",main=gene_name)           
           
