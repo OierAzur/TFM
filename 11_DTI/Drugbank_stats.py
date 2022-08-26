@@ -1,4 +1,11 @@
+#Trabajo Fin de Máster - Máster en Métodos Computacionales en ciencias
+#Autor: Oier Azurmendi Senar
+#Tutores_ Silvestre Vicent Cambra y Mikel Hernaez
+#Curso 2021-2022
 
+#Objetivo: Obtener las estadísticas de los grafos creados a partir de la DB de Drugbank.
+
+######################################################################################################
 import os
 import networkx as nx
 import pandas as pd 
@@ -58,7 +65,7 @@ for node in G.nodes(data=True):
         shapes.append('X')
         fig, ax = plt.subplots(figsize=(10, 10))
 
-#Gráfica de la base de datos        
+#Gráfica del grado de la base de datos        
 fig, ax = plt.subplots(figsize=(10, 10))
 nx.draw(G, 
         with_labels=False, 
@@ -126,18 +133,19 @@ for node in subg.nodes(data=True):
 nx.draw(subg,
         node_size=15,
         node_color=colors)
-#plt.savefig(f'YamNR/sub_{n}.png')
+#plt.savefig(f'Drugbank/sub_{n}.png')
+
 # isolated nodes
 list(nx.isolates(G))
 
-#Add degree plot
+#Gráfica de los grados
 
-fig, ax2 = plt.subplots(figsize=(10, 10))
-ax2.set_title("Degree histogram")
-ax2.set_xlabel("Degree")
-ax2.set_ylabel("# of Nodes")
+fig, grad = plt.subplots(figsize=(10, 10))
+grad.set_title("Degree histogram")
+grad.set_xlabel("Degree")
+grad.set_ylabel("# of Nodes")
 fig.tight_layout()
-ax2.plot(*np.unique(a, return_counts=True),'o-')
+grad.plot(*np.unique(a, return_counts=True),'o-')
 fig.show()
 plt.savefig('Drugbank-Degree-nueva.png')
 
@@ -150,13 +158,14 @@ for i in range(len(lcn)):
     size_subgraphs.append(len(subg.nodes))
 size_subgraphs.sort()
 print(size_subgraphs)
+
 #Nodos por componente
-fig, ax3 = plt.subplots(figsize=(10, 10))
-ax3.set_title("Connectivity Plot")
-ax3.set_xlabel("# of Nodes")
-ax3.set_ylabel("Connected components")
+fig, componentes = plt.subplots(figsize=(10, 10))
+componentes.set_title("Connectivity Plot")
+componentes.set_xlabel("# of Nodes")
+componentes.set_ylabel("Connected components")
 fig.tight_layout()
-ax3.plot(*np.unique(size_subgraphs, return_counts=True),'o-')
+componentes.plot(*np.unique(size_subgraphs, return_counts=True),'o-')
 fig.show()
 #plt.savefig('Drugbank-Connectivity-nueva.png')
 
