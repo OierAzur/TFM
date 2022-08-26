@@ -20,6 +20,9 @@ library(edgeR)
 library(AnnotationDbi)
 library(RColorBrewer)
 library(gplots)
+library(EnsDb.Mmusculus.v79)
+
+txdb <- EnsDb.Mmusculus.v79
 
 ## change my_id to be the dataset that you want.  Andersen
 my_id <- "GSE26566"
