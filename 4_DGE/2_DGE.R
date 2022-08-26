@@ -42,6 +42,7 @@ summary(summa.fit)
 
 #Guardar tabla
 save(fit.cont,file="fit_DGE.Rdata")
+save(cont.matrix,file="contraste.Rdata")
 save(v,file="voom_result.Rdata")
 
 #Gráficas
