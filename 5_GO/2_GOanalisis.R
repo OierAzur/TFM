@@ -12,7 +12,7 @@ load("/Users/oierazur/TFM/GO/CCArag_ortolog.Rdata")
 load("/Users/oierazur/TFM/GO/Dieta_ortolog.Rdata.Rdata")
 load("/Users/oierazur/TFM/GO/Hidrodinamica_ortolog.Rdata")
 load("/Users/oierazur/TFM/GO/TTransformadas_ortolog.Rdata")
-load("/Users/oierazur/TFM/GODietaVsHidro_ortolog.Rdata")
+load("/Users/oierazur/TFM/GO/DietaVsHidro_ortolog.Rdata")
 
 library("clusterProfiler")
 library("enrichplot")
