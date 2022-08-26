@@ -18,6 +18,7 @@ load("/Users/oierazur/TFM/DGE/Hidrodinamica_vs_normalfiltro1.Rdata")
 load("/Users/oierazur/TFM/DGE/Transformadas_vs_normalfiltro1.Rdata")
 load("/Users/oierazur/TFM/DGE/Dieta_vs_Hidrodinamica.Rdata")
 load("/Users/oierazur/TFM/DGE/voom_result.Rdata")
+load("/Users/oierazur/TFM/DGE/fit_DGE.Rdata.Rdata")
 
 #Heatmaps
 lcpm <- cpm(y,log=T)
