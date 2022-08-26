@@ -36,9 +36,6 @@ head(cam.CCARagsNormal_UP,5)
 cam.CCARagsNormal_Down <- subset(x=cam.CCARagsNormal,subset=Direction=="Down")
 cam.CCARagsNormal_Down[order(cam.CCARagsNormal_Down$PValue),]
 head(cam.CCARagsNormal_Down,5)
-
-barcodeplot(fit.cont$t[,1], index=idx$GO_EUKARYOTIC_TRANSLATION_INITIATION_FACTOR_3_COMPLEX     , 
-            index2=idx$GO_REGULATION_OF_EXTRACELLULAR_MATRIX_ORGANIZATION , main="CCAvsNormal")
             
 save(cam.CCARagsNormal,file="Hallmark_GENESET_CCARag.Rdata")
 write.csv(x=cam.CCARagsNormal,"Hallmark_GENESET_CCARag.csv")
@@ -63,9 +60,6 @@ head(cam.Dieta_vs_normal_UP,6)
 cam.Dieta_vs_normal_Down <- subset(x=cam.Dieta_vs_normal,subset=Direction=="Down")
 cam.Dieta_vs_normal_Down[order(cam.Dieta_vs_normal_Down$PValue),]
 head(cam.Dieta_vs_normal_Down,6)
-
-barcodeplot(fit.cont$t[,2], index=idx$GO_NEUROPILIN_BINDING   , 
-            index2=idx$GO_REGULATION_OF_ANTIGEN_PROCESSING_AND_PRESENTATION, main="DietavsNormal")
             
 save(cam.Dieta_vs_normal,file="Hallmark_GENESET_DIETA.Rdata")
 write.csv(x=cam.Dieta_vs_normal,"Hallmark_GENESET_DIETA.csv")
@@ -90,9 +84,6 @@ head(cam.Hidrodinamica_vs_normal_UP,5)
 cam.Hidrodinamica_vs_normal_Down <- subset(x=cam.Hidrodinamica_vs_normal,subset=Direction=="Down")
 cam.Hidrodinamica_vs_normal_Down[order(cam.Hidrodinamica_vs_normal_Down$PValue),]
 head(cam.Hidrodinamica_vs_normal_Down,5)
-
-barcodeplot(fit.cont$t[,3], index=idx$GO_STRAND_DISPLACEMENT     , 
-            index2=idx$GO_POSITIVE_REGULATION_OF_STEM_CELL_DIFFERENTIATION, main="HidrodinamicavsNormal")
             
 save(cam.Hidrodinamica_vs_normal,file="Hallmark_GENESET_HIDRODINAMICA.Rdata")
 write.csv(x=cam.Dieta_vs_normal,"Hallmark_GENESET_HIDRODINAMICA.csv")
@@ -117,8 +108,6 @@ cam.Transformadas_vs_normal_Down <- subset(x=cam.Transformadas_vs_normal,subset=
 cam.Transformadas_vs_normal_Down[order(cam.Transformadas_vs_normal_Down$PValue),]
 head(cam.Transformadas_vs_normal_Down,5)
 
-barcodeplot(fit.cont$t[,4], index=idx$GO_ENERGY_RESERVE_METABOLIC_PROCESS    , 
-            index2=idx$GO_ENDOPLASMIC_RETICULUM_TUBULAR_NETWORK  , main="TransformadasvsNormal")
             
 save(cam.Transformadas_vs_normal,file="Hallmark_GENESET_TRANSFORMADAS.Rdata")
 write.csv(x=cam.Transformadas_vs_normal,"Hallmark_GENESET_TRANSFORMADAS.csv")
@@ -142,9 +131,6 @@ head(cam.DietaVsHidro_UP,5)
 cam.DietaVsHidro_Down <- subset(x=cam.DietaVsHidro,subset=Direction=="Down")
 cam.DietaVsHidro_Down[order(cam.DietaVsHidro_Down$PValue),]
 head(cam.DietaVsHidro_Down,5)
-
-barcodeplot(fit.cont$t[,5], index=idx$GO_ENERGY_RESERVE_METABOLIC_PROCESS    , 
-            index2=idx$GO_ENDOPLASMIC_RETICULUM_TUBULAR_NETWORK  , main="TransformadasvsNormal")
             
 save(cam.DietaVsHidro,file="Hallmark_GENESET_DietVsHidro.Rdata")
 write.csv(x=cam.DietaVsHidro,"Hallmark_GENESET_DietVsHidro.csv")
