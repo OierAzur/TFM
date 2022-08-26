@@ -6,7 +6,7 @@
 #Objetivo: Análisis de los términos de Gene Ontology encontradas en los conjuntos de genes.
 
 ######################################################################################################
-setwd("Documents/TFM/GeneSet/RegGS")
+setwd("Documents/TFM/GeneSet/GO")
 
 load("/Users/oierazur/TFM/DGE/voom_result.Rdata")
 load("/Users/oierazur/TFM/DGE/contraste.Rdata".Rdata")
