@@ -13,6 +13,7 @@ library(edgeR)
 library(AnnotationDbi)
 
 load("/Users/oierazur/TFM/DGE/ObjetoTxi.Rdata")
+load("/Users/oierazur/TFM/DGE/metadata.Rdata")
 
 #Crear objeto DGE
 y <- DGEList(txi$counts,samples=s2c$sample,group=s2c$condition)
