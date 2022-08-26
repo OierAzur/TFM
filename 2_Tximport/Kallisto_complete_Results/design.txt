@@ -1,0 +1,16 @@
+sample-condition					
+C_17741_S7_R1_001-CCA.Rag2_F1
+C_17742_S8_R1_001-CCA.Rag2_F1
+C_17743_S9_R1_001-CCA.Rag2_F1
+D_8161_S4_R1_001-Dieta
+D_8162_S5_R1_001-Dieta
+D_8163_S6_R1_001-Dieta
+H_20791_S1_R1_001-Hidrodinamica
+H_20792_S2_R1_001-Hidrodinamica
+H_20793_S3_R1_001-Hidrodinamica
+KPC1_S10_R1_001-Colangiocitos.transformados
+KPC2_S11_R1_001-Colangiocitos.transformados
+KPC3_S12_R1_001-Colangiocitos.transformados
+KPE1_S13_R1_001-Colangiocitos.normales
+KPE2_S14_R1_001-Colangiocitos.normales
+KPE3_S15_R1_001-Colangiocitos.normales

@@ -1,0 +1,13 @@
+{
+	"n_targets": 117494,
+	"n_bootstraps": 25,
+	"n_processed": 27638283,
+	"n_pseudoaligned": 24935939,
+	"n_unique": 6553824,
+	"p_pseudoaligned": 90.2,
+	"p_unique": 23.7,
+	"kallisto_version": "0.46.0",
+	"index_version": 10,
+	"start_time": "Tue Jan 11 18:45:22 2022",
+	"call": "kallisto quant -i transcripts.idx -o C_17743_S9 -b 25 --single -l 51 -s 20 C_17743_S9_R1_001.fastq"
+}
