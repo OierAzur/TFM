@@ -3,7 +3,7 @@
 #Tutores_ Silvestre Vicent Cambra y Mikel Hernaez
 #Curso 2021-2022
 
-#Objetivo: Análisis de los dianas términos de Gene Ontology encontradas en los conjuntos de genes.
+#Objetivo: Análisis de los términos de Gene Ontology encontradas en los conjuntos de genes.
 
 ######################################################################################################
 setwd("Documents/TFM/GeneSet/RegGS")
