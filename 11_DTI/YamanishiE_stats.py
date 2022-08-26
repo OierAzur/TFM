@@ -145,7 +145,7 @@ grad.set_title("Degree histogram")
 grad.set_xlabel("Degree")
 grad.set_ylabel("# of Nodes")
 fig.tight_layout()
-grad.plot(*np.unique(a, return_counts=True),'o-')
+grad.plot(*np.unique(grados, return_counts=True),'o-')
 fig.show()
 #plt.savefig('Yamanishi-E-Degree-nueva.png')
 
