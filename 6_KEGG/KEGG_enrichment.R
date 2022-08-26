@@ -1,3 +1,19 @@
+#Trabajo Fin de Máster - Máster en Métodos Computacionales en ciencias
+#Autor: Oier Azurmendi Senar
+#Tutores_ Silvestre Vicent Cambra y Mikel Hernaez
+#Curso 2021-2022
+
+#Objetivo: Análisis de sobrerrepresentación de los KEGG pathways.
+
+######################################################################################################
+setwd("Documents/TFM/KEGG/")
+
+load("/Users/oierazur/TFM/GO/CCArag_ortolog.Rdata")
+load("/Users/oierazur/TFM/GO/Dieta_ortolog.Rdata.Rdata")
+load("/Users/oierazur/TFM/GO/Hidrodinamica_ortolog.Rdata")
+load("/Users/oierazur/TFM/GO/TTransformadas_ortolog.Rdata")
+load("/Users/oierazur/TFM/GODietaVsHidro_ortolog.Rdata")
+
 library("clusterProfiler")
 library("enrichplot")
 
