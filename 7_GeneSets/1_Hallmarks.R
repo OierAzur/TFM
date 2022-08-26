@@ -9,7 +9,7 @@
 setwd("Documents/TFM/GeneSet/Hallmarks")
 
 load("/Users/oierazur/TFM/DGE/voom_result.Rdata")
-load("/Users/oierazur/TFM/DGE/contraste.Rdata".Rdata")
+load("/Users/oierazur/TFM/DGE/contraste.Rdata")
 load("/Users/oierazur/TFM/GO/CCArag_ortolog.Rdata")
 load("/Users/oierazur/TFM/GO/Dieta_ortolog.Rdata.Rdata")
 load("/Users/oierazur/TFM/GO/Hidrodinamica_ortolog.Rdata")
