@@ -40,3 +40,4 @@ rownames(s2c)
 rownames(txi$counts)
 
 save(txi,file="ObjetoTxi.Rdata")
+save(s2c,file="metadata.Rdata")
